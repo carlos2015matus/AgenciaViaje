@@ -12,7 +12,7 @@ namespace AgenciaViaje.Web.Data
         public SqlConnection con;
         public DatViaje()
         {
-            con = new SqlConnection("Data Source = MATUS-PC\\MSSQLSERVER2012; Initial Catalog=Cinepolis; User Id=sa; Password=12345;");
+            con = new SqlConnection("Data Source = MATUS-PC\\MSSQLSERVER2012; Initial Catalog=Agencia; User Id=sa; Password=12345;");
         }
 
         public DataTable Obtener()
