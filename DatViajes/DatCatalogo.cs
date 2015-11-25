@@ -9,7 +9,10 @@ namespace AgenciaViaje.Web.Data
 {
     public class DatCatalogo
     {
-
+        public DatCatalogo()
+        {
+            con = new SqlConnection("Data Source = MATUS-PC\\MSSQLSERVER2012; Initial Catalog=Cinepolis; User Id=sa; Password=12345;");
+        }
         public SqlConnection con;
         public DatCatalogo()
         {

@@ -7,11 +7,16 @@ using System.Data.SqlClient;
 
 namespace AgenciaViaje.Web.Data
 {
-   public class DatUsuario
+    public class DatUsuario
     {
-
+         
+       public DatUsuario()
+        {
+            con = new SqlConnection("Data Source = MATUS-PC\\MSSQLSERVER2012; Initial Catalog=Cinepolis; User Id=sa; Password=12345;");
+        }
         public DataTable ObtenerUsuario(string Correo, string Password)
         {
+
 
             SqlCommand com = new SqlCommand("spObtenerUsuario", con);
             com.CommandType = CommandType.StoredProcedure;
