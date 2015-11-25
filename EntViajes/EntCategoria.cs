@@ -5,7 +5,11 @@ using System.Text;
 
 namespace AgenciaViaje.Web.Business.Entity
 {
-    class EntCategoria
+    public class EntCategoria
     {
+
+        public int Id { get; set; }
+        public string Nomb { get; set; }
+        public string Desc { get; set; }
     }
 }

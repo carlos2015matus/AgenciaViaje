@@ -2,10 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace AgenciaViaje.Web.Data
 {
-    class DatUsuario
+   public class DatUsuario
     {
+
+        public DataTable ObtenerUsuario(string Correo, string Password)
+        {
+
+            SqlCommand com = new SqlCommand("spObtenerUsuario", con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.Add(new SqlParameter() { SqlDbType = SqlDbType.NVarChar, ParameterName = "@Correo", Value = Correo });
+            com.Parameters.Add(new SqlParameter() { SqlDbType = SqlDbType.NVarChar, ParameterName = "@Password", Value = Password });
+            SqlDataAdapter da = new SqlDataAdapter(com);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public SqlConnection con { get; set; }
+
     }
 }
