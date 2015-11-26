@@ -28,7 +28,7 @@ namespace AgenciaViaje.Web.Business
                 ent.Descripcion = dr["VIAJ_DESC"].ToString();
                 ent.Video = dr["VIAJ_VIDE"].ToString();
                 ent.FotoLugar = dr["VIAJ_FOTO_LUGA"].ToString();
-                ent.FotoHotel = dr["VIAJ_HOTE"].ToString();
+                ent.FotoHotel = dr["VIAJ_FOTO_HOTE"].ToString();
                 ent.Costo = Convert.ToDouble(dr["VIAJ_COST"]);
                 ent.Lugar = dr["VIAJ_LUGA"].ToString();
                 ent.Destino.Nomb = dr["DEST_NOMB"].ToString();
