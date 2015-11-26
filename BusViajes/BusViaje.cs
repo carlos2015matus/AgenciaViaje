@@ -29,7 +29,7 @@ namespace AgenciaViaje.Web.Business
                 ent.Video = dr["VIAJ_VIDE"].ToString();
                 ent.FotoLugar = dr["VIAJ_FOTO_LUGA"].ToString();
                 ent.FotoHotel = dr["VIAJ_FOTO_HOTE"].ToString();
-                ent.Costo = Convert.ToDouble(dr["VIAJ_COST"]);
+                ent.Costo = Convert.ToDouble(dr["VIAJ_COSTO"]);
                 ent.Lugar = dr["VIAJ_LUGA"].ToString();
                 ent.Destino.Nomb = dr["DEST_NOMB"].ToString();
                 ent.Categoria.Nomb = dr["CATE_NOMB"].ToString();
