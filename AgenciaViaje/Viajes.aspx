@@ -13,24 +13,44 @@
             <div class="col-md-1">
             </div>
             <div class="col-md-10">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#home">Nacionales</a></li>
-                    <li><a data-toggle="tab" href="#menu1">Internacionales</a></li>
+                <ul class="nav nav-pills">
+                    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+                    <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+                    <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
                 </ul>
                 <div class="tab-content">
                     <div id="home" class="tab-pane fade in active">
                         <h3>
-                            Vista México</h3>
+                            HOME</h3>
                         <p>
-                            Viaja con tus membrecias</p>
+                            Some content.</p>
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
-                                <asp:PlaceHolder runat="server" ID="phCarrucelUno" />
+                                <asp:PlaceHolder runat="server" ID="phCarruselUno"/>  
                             </ol>
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
-                                <asp:PlaceHolder runat="server" ID="phCarrucelDos" />
+                                <asp:PlaceHolder runat="server" ID="phCarrucelDos"/>  
+                                <%--<div class="item active">
+                                    <img src="img/AcapulcoPort.png" style="margin: auto; margin-top: 17px;">
+                                    <div class="carousel-caption">
+                                        <h3>
+                                            Hola Mundo</h3>
+                                        <p>
+                                            Hola Pequeño Mundo</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/Cancunport.png" style="margin: auto; margin-top: 17px;">
+                                    <div class="carousel-caption">
+                                        <h3>
+                                            Hola Mundo</h3>
+                                        <p>
+                                            Hola Pequeño Mundo</p>
+                                    </div>
+                                </div>
+                                ...--%>
                             </div>
                             <!-- Controls -->
                             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -42,54 +62,9 @@
                     </div>
                     <div id="menu1" class="tab-pane fade">
                         <h3>
-                            Visita Sitios Extrangeros</h3>
+                            Menu 1</h3>
                         <p>
-                            Viaja a meses sin intereses</p>
-                        <div id="carousel-example-genericUno" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-genericUno" data-slide-to="0" class="active">
-                                </li>
-                                <li data-target="#carousel-example-genericUno" data-slide-to="1"></li>
-                                <%--<li data-target="#carousel-example-generic" data-slide-to="2"></li>--%>
-                            </ol>
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <img src="img/Lasvegasport.png" style="margin: auto; margin-top: 17px" alt="Viajes Directo a Cancun">
-                                    <div class="carousel-caption">
-                                        <div style="background-color: rgba(0, 128, 128, 0.59);">
-                                            <h3>
-                                                <asp:Label ID="Label1" Text="Viaja a la Vegas ¡Ven pronto!" runat="server" />
-                                            </h3>
-                                            <p>
-                                                Visita nuestros ejores Casinos
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/Ddubaiportada.png" style="margin: auto; margin-top: 17px" alt="Acapulco">
-                                    <div class="carousel-caption">
-                                        <div style="background-color: rgba(0, 128, 128, 0.59);">
-                                            <h3>
-                                                <asp:Label ID="Label3" Text="Viaja al lugar mas lujoso del mundo Dubai" runat="server" />
-                                            </h3>
-                                            <p>
-                                                visita nuestras hermosas playas
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                ...
-                            </div>
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#carousel-example-genericUno" role="<%--button--%>"
-                                data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
-                                </span><span class="sr-only">Previous</span> </a><a class="right carousel-control"
-                                    href="#carousel-example-genericUno" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"
-                                        aria-hidden="true"></span><span class="sr-only">Next</span> </a>
-                        </div>
+                            Some content in menu 1.</p>
                     </div>
                 </div>
                 <div class="panel-body" style="background-color: Gray; margin-top: 20px">
